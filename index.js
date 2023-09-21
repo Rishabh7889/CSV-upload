@@ -21,7 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 // Load Router
 app.use("/", require("./routes/index"));
 
-app.listen(process.env.PORT, async (error) => {
+app.listen(9000, async (error) => {
    await connectDB();
    if (error) {
       console.log("error in the port");
